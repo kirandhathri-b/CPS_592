@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Phone Dialer</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <link rel="stylesheet" href="phone.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="phone.js"></script>
+</head>
+<body>
+  <h2>Phone Dialer</h2>
+  <div id="tab_bar">
+    <button id="Dialpad" class="buttons">Dialpad</button>
+    <button id="Contacts" class="buttons">Contacts</button>
+    <button id="Addcontacts" class="buttons">Add Contact</button>
+  </div>
+  <div id="content">
+    <div id="content_dialer" class="content_tab">
+      <h3>Dialpad Tab</h3>
+      <pre>
+        1   2   3
+        4   5   6
+        7   8   9
+        *   0   #
+      </pre>
+    </div>
+    <div id="content_contacts" class="content_tab">
+      <h3>Contacts Tab</h3>
+      <ul>
+        <li>Tom Cruise</li>
+        <li>Dwayne Johnson</li>
+        <li>Spielberg</li>
+      </ul>
+    </div>
+    <div id="content_addcontact" class="content_tab">
+      <h3>Add Contact Tab</h3>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button type="submit">Add Contact</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
