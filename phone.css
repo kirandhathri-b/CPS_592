@@ -7,4 +7,14 @@
 }
 body {
   background-color: lightblue;
+  text-align:center;
+}
+#content_contacts{
+  line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+#dial, #clear{
+  color: white;
+  background: green;
 }

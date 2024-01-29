@@ -12,10 +12,12 @@
     <button id="Dialpad" class="buttons">Dialpad</button>
     <button id="Contacts" class="buttons">Contacts</button>
     <button id="Addcontacts" class="buttons">Add Contact</button>
+    <button id="testgestures" class="buttons">Test Gestures</buttons>
   </div>
   <div id="content">
     <div id="content_dialer" class="content_tab">
       <h3>Dialpad Tab</h3>
+      <input id ="numpad"></input> <br><br>
       <div id="row1" class="row1">
         <div>
           <button>1</button>
@@ -44,13 +46,18 @@
                 <button>#</button>
               </div>
             </div>
+            <div id="row5" class="row5">
+              <div>
+                <button id="dial">DIAL</button>
+                <button id="clear">Clear</button>
+              </div>
           </div>
     </div>
     <div id="content_contacts" class="content_tab">
       <h3>Contacts Tab</h3>
       <ul>
         <li>Tom Cruise</li>
-        <li>Dwayne Johnson</li>
+        <li>Elon Musk</li>
         <li>Spielberg</li>
       </ul>
     </div>
@@ -68,6 +75,14 @@
         <br>
         <button type="submit">Add Contact</button>
       </form>
+    </div>
+    <div id="content_testgestures" class="content_tab">
+      <p>Test Gestures</p>
+      <div id="gestureoutput" class="testgestures">
+        <input id="gestureop" type="text"><br><br>
+      </div>
+      <div id="gesturearea" class="testgestures">
+        <input id="gestureareaip" type="text" style="width: 300px; height: 300px;">
     </div>
   </div>
 </body>
